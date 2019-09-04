@@ -1,0 +1,47 @@
+header{
+  background-color: #005293;
+  padding-top: 2em;
+  text-align:  center;
+  color: white;
+}
+
+ul{
+  list-style: none;
+  text-align: center;
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+
+nav{
+  background-color: #413F3F;
+  color: white;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover{
+  zoom: 1.2;
+  color: yellow;
+  text-decoration: underline;
+}
+
+.year{
+  font: bold;
+}
+.nav{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.active{
+  color: yellow;
+  text-decoration:  underline;
+  
+}
