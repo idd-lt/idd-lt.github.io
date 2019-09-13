@@ -1,17 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root{
+
+  --roboto-font: 'Roboto', sans-serif;
+
+}
+
+h1{
+  font-family: var(--roboto-font);
+}
+
+
 header{
+
   background-color: #005293;
   padding-top: 2em;
   text-align:  center;
   color: white;
+  border-radius: 20px;
 }
 
 ul{
   list-style: none;
   text-align: center;
+  padding: 50px;
 }
+
+
 a{
    text-decoration: none;
    color: white;
+  
 }
 
 nav{
@@ -25,8 +44,10 @@ p{
 
 a:hover{
   zoom: 1.2;
-  color: yellow;
-  text-decoration: underline;
+  color: yellow; 
+  text-decoration: underline; 
+ /* background-color: #40A6FF;
+ border-radius: 40px; */
 }
 
 .year{
@@ -44,4 +65,25 @@ a:hover{
   color: yellow;
   text-decoration:  underline;
   
+}
+
+.apply{
+   height: 40px;
+   width: 70px;
+   border-radius: 60px;
+   background-color: #005293;
+   color: white;
+   
+}
+.applybutton{
+  padding-left: 40%;
+  
+}
+
+.campus{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+ 
 }
