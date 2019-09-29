@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 :root{
 
   --roboto-font: 'Roboto', sans-serif;
-
+  --sans-pro : 'Source Sans Pro', sans-serif;
 }
 
 h1{
@@ -34,25 +35,59 @@ a{
 }
 
 nav{
-  background-color: #413F3F;
+ 
   color: white;
+  
 }
+
 
 p{
   font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+  background-color: #262626;
+}
+nav{
+  background-color: #005293;
+  border-radius: 40px;
+
+}
+body{
+  font-size: 1.1em;
+  font-family: var(--sans-pro);
+ 
 }
 
 a:hover{
   zoom: 1.2;
   color: yellow; 
   text-decoration: underline; 
+  transition: all 0.3s;
  /* background-color: #40A6FF;
  border-radius: 40px; */
 }
+.search{
+  width: 200px;
+  box-shadow: 5px 10px #3752A6;
+ }
+ 
+ .Box{
+ padding-right: 1% ;
+ }
+
+ 
 
 .year{
   font: bold;
 }
+
+.intro{
+ font-family: var(--roboto-font);
+}
+.intro-2{
+  padding-top: 1em;
+}
+
 .nav{
   display: grid;
   grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -77,13 +112,192 @@ a:hover{
 }
 .applybutton{
   padding-left: 40%;
+
+}
+
+ 
+
+.dropbtn {
+ background-color: #005293;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 5px 10px #888888;
+  transition: all 0.3s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-left: 625px;
+ 
+}
+
+.dropdown-content {
+  visibility: hidden;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {visibility: visible;} 
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+.follow{
+  color: white;
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+.copyright{
+  text-align: center;
+  color: white;
+  font-family: var(--roboto-font);
+  font-size: 1.2em;
+}
+
+.sociallinks{
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr;
+}
+
+.nav-des{
+  text-transform: uppercase;
+}
+.gbctag{
+ font-family: var(--roboto-font);
+}
+
+.field{
+  background-color: #005293;
+}
+
+.apply{
+  text-align: center;
+}
+
+.buttons{
+  display: grid;
+  padding-left: 10%;
+  grid-gap: 1em;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr;
+}
+
+.select{
+  
+  text-transform:uppercase;
+  font-family: var(--roboto-font);
+}
+.select-opt{
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--roboto-font);
+
+}
+
+.select-btn{
+  background-color: #3752A6;
+  color:  white;
+  padding: 1em;
+  box-shadow: 5px 10px  #888888;
   
 }
 
-.campus{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
- 
+.select-btn:hover{
+  color: yellow;
+  zoom: 1.1;
+  box-shadow: none;
+
 }
+
+
+.opt{
+  background-color: #005293;
+ display: grid;
+ grid-template-columns:  1fr 1fr 1fr;
+}
+
+.more-info{
+  color: black;
+  text-transform: uppercase;
+  font-family: var(--roboto-font);
+}
+
+.info{
+  color: black;
+}
+
+.schoollinks{
+  color: white;
+  text-align: center;
+  padding-left: 2em;
+  
+}
+
+.information{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+}
+
+@media screen and (max-width: 600px) {
+  
+  header{
+    border-radius: 0px;
+  }
+  
+.nav{
+  font-size: 0.9em;
+  display: inline;
+}
+.dropdown{
+  padding-left: 2em;
+  
+}
+
+.buttons{
+  display: grid;
+  padding-left: 10%;
+  grid-gap: 1em;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr;
+}
+
+
+.select{
+  font-size: .9em;
+}
+
+.more-info{
+  font-size: 0.8em;
+}
+
+.opt{
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+}
+
+
+
+
+
+
+
+
