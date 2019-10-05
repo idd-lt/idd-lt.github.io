@@ -157,9 +157,6 @@ a:hover{
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-
-
-
 .follow{
   color: white;
   text-align: left;
@@ -267,7 +264,7 @@ a:hover{
   display: inline;
 }
 .dropdown{
-  padding-left: 2em;
+  padding-left:35%;
   
 }
 
@@ -291,6 +288,11 @@ a:hover{
   display: grid;
   grid-gap: 0.5em;
 }
+
+.schoollinks{
+  font-size: 0.5em;
+}
+
 
 }
 
